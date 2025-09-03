@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="src/output.css">
 </head>
 <body>
+    <!-- Header -->
     <header class="header flex justify-center gap-30 p-5">
         <div class="header_socials">
             <ul class="socials_list flex gap-2">
@@ -17,7 +18,7 @@
                 <li class="socials__list-item"><a class="socials-list__link" href="https://www.linkedin.com/in/wanjiku-kairu/" target="_blank"><img class="socials-list__link-img w-6 hover:opacity-60" src="images/linkedin-in-brands-solid-full.svg"/></a></li>
             </ul>
         </div>
-        <img class="header__hamburger w-8" src="images/bars-solid-full.svg" alt="hamburger menu">
+        <img class="header__hamburger w-8 xl:hidden" src="images/bars-solid-full.svg" alt="hamburger menu">
         <nav class="header__nav hidden xl:block">
             <ul class="header__navlist flex gap-10">
                 <li class="header__navlist-item"><a class="header__navlist-link hover:text-cyan-600" href="">Home</a></li>
@@ -31,6 +32,7 @@
         </nav>
     </header>
     <main>
+        <!-- Hero -->
         <div class="hero relative">
             <img class="hero__img" src="images/wk_hero_mobile.avif" alt="wanjiku portrait">
             <div class="hero__copy absolute inset-x-0 top-6 text-center">
@@ -38,6 +40,7 @@
                 <p class="hero__text text-white text-center">Producer <span class="purple__span text-violet-300">|</span> Writer</p>
             </div>
         </div>
+        <!-- About Me -->
         <div class="about-me bg-violet-300 pt-6">
             <img src="images/Wanjiku_Kairu_Headshot_edited_edited.avif" alt="Wanjiku smiling">
             <div class="about-me__copy p-6 flex flex-col items-center">
@@ -45,16 +48,29 @@
                 <p class="about-me__subtitle pb-4 text-center">Hey there, I'm Wanjiku!</p>
                 <p class="about-me__body w-3/4 text-center">My passion is to connect audiences through emotion. The energy of comedy runs through me to illuminate the wonders of the mind. I hope to enlighten and spread joy in our world. I think we all deserve to smile!</p>
                 <div class="about-me__btn-box flex flex-col gap-4 items-center p-4">
-                    <a class="see-content-btn bg-black text-white py-3 px-4 w-fit" href="">See Content</a>
-                    <a class="see-writing-portfolio-btn bg-black text-white py-3 px-4 w-fit" href="">See Writing Portfolio</a>
+                    <a class="see-content-btn bg-black text-white py-2 px-4 w-fit border-black border-2 transition duration-300 hover:bg-teal-500 hover:text-black" href="">See Content</a>
+                    <a class="see-writing-portfolio-btn bg-black text-white py-2 px-4 w-fit border-black border-2 transition duration-300 hover:bg-teal-500 hover:text-black" href="">See Writing Portfolio</a>
                 </div>
             </div>
         </div>
-        <div class="content flex flex-col gap-4">
-            <a class="content__btn bg-violet-200 p-6 w-4/5" href="">CONTENT PORTFOLIO</a> 
-            <a class="content__btn bg-violet-400 p-6 w-4/5" href="">JAZZ FESTIVAL</a>
-            <a class="content__btn bg-violet-600 p-6 w-4/5" href="">COMMERCIAL</a>
+        <!-- Content -->
+        <div class="content flex flex-col gap-6 items-center bg-[url(/images/textured_background_pink.avif)] py-10">
+            <a class="content__btn bg-violet-200 py-4 w-4/5 text-center text-2xl font-bold border-10 tracking-wider transition duration-400 hover:bg-white" href="">CONTENT PORTFOLIO</a> 
+            <a class="content__btn bg-violet-400 py-4 w-4/5 text-center text-2xl font-bold border-10 tracking-wider transition duration-400 hover:bg-white" href="">JAZZ FESTIVAL</a>
+            <a class="content__btn bg-violet-600 py-4 w-4/5 text-center text-2xl font-bold border-10 tracking-wider transition duration-400 hover:bg-white" href="">COMMERCIAL</a>
         </div>
+        <!-- Gallery -->
+         <div class="gallery">
+
+         </div>
+         <!-- Contact -->
+          <div class="contact">
+
+          </div>
+          <!-- Footer -->
+           <footer class="footer">
+            
+           </footer>
     </main>
 </body>
 </html>
