@@ -1,1 +1,11 @@
 @import "tailwindcss";
+
+.slide-menu__navlist-item {
+    padding: 16px;
+    border-bottom: 2px solid rgb(100, 100, 100);
+}
+
+.slide-menu__link {
+    font-size: 1.15rem;
+    color: rgb(100, 100, 100)
+}
