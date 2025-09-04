@@ -308,6 +308,9 @@
   .self-center {
     align-self: center;
   }
+  .scroll-smooth {
+    scroll-behavior: smooth;
+  }
   .border {
     border-style: var(--tw-border-style);
     border-width: 1px;
@@ -347,6 +350,9 @@
   }
   .bg-\[url\(\/images\/textured_background_pink\.avif\)\] {
     background-image: url(/images/textured_background_pink.avif);
+  }
+  .bg-\[url\(\/images\/writing_background\.avif\)\] {
+    background-image: url(/images/writing_background.avif);
   }
   .object-bottom {
     object-position: bottom;
@@ -443,6 +449,13 @@
   .duration-400 {
     --tw-duration: 400ms;
     transition-duration: 400ms;
+  }
+  .hover\:cursor-pointer {
+    &:hover {
+      @media (hover: hover) {
+        cursor: pointer;
+      }
+    }
   }
   .hover\:bg-teal-500 {
     &:hover {

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="scroll-smooth" lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,11 +16,11 @@
             </div>
                 
             <ul class="slide-menu__navlist">
-                <li class="slide-menu__navlist-item"><a class="slide-menu__link" href="" >Home</a></li>
-                <li class="slide-menu__navlist-item"><a class="slide-menu__link" href="" >About</a></li>
-                <li class="slide-menu__navlist-item"><a class="slide-menu__link" href="" >Content</a></li>
-                <li class="slide-menu__navlist-item"><a class="slide-menu__link" href="" >Writing</a></li>
-                <li class="slide-menu__navlist-item"><a class="slide-menu__link" href="" >Gallery</a></li>
+                <li class="slide-menu__navlist-item"><a class="slide-menu__link" href="index.html#home" >Home</a></li>
+                <li class="slide-menu__navlist-item"><a class="slide-menu__link" href="#about" >About</a></li>
+                <li class="slide-menu__navlist-item"><a class="slide-menu__link" href="#content" >Content</a></li>
+                <li class="slide-menu__navlist-item"><a class="slide-menu__link" href="writing.html" >Writing</a></li>
+                <li class="slide-menu__navlist-item"><a class="slide-menu__link" href="#gallery" >Gallery</a></li>
                 <li class="slide-menu__navlist-item"><a class="slide-menu__link" href="" >Resume</a></li>
                 <li class="slide-menu__navlist-item"><a class="slide-menu__link" href="" >Representation</a></li>
                 <li class="slide-menu__navlist-item"><a class="slide-menu__link" href="" >Models</a></li>
@@ -29,7 +29,7 @@
         </div>
         
      </div>
-     <div class="container">
+     <div class="container" id="home">
     <!-- Header -->
         <header class="header flex justify-center gap-30 p-5">
             <div class="header_socials">
@@ -43,11 +43,11 @@
             <img class="header__hamburger w-8 xl:hidden" src="images/bars-solid-full.svg" alt="hamburger menu">
             <nav class="header__nav hidden xl:block">
                 <ul class="header__navlist flex gap-10">
-                    <li class="header__navlist-item"><a class="header__navlist-link hover:text-cyan-600" href="">Home</a></li>
-                    <li class="header__navlist-item"><a class="header__navlist-link hover:text-cyan-600" href="">About</a></li>
-                    <li class="header__navlist-item"><a class="header__navlist-link hover:text-cyan-600" href="">Content</a></li>
-                    <li class="header__navlist-item"><a class="header__navlist-link hover:text-cyan-600" href="">Writing</a></li>
-                    <li class="header__navlist-item"><a class="header__navlist-link hover:text-cyan-600" href="">Gallery</a></li>
+                    <li class="header__navlist-item"><a class="header__navlist-link hover:text-cyan-600" href="index.html#home">Home</a></li>
+                    <li class="header__navlist-item"><a class="header__navlist-link hover:text-cyan-600" href="#about">About</a></li>
+                    <li class="header__navlist-item"><a class="header__navlist-link hover:text-cyan-600" href="#content">Content</a></li>
+                    <li class="header__navlist-item"><a class="header__navlist-link hover:text-cyan-600" href="writing.html">Writing</a></li>
+                    <li class="header__navlist-item"><a class="header__navlist-link hover:text-cyan-600" href="#gallery">Gallery</a></li>
                     <li class="header__navlist-item"><a class="header__navlist-link hover:text-cyan-600" href="">Resume</a></li>
                     <li class="header__navlist-item"><a class="header__navlist-link hover:text-cyan-600" href="">More</a></li>
                 </ul>
@@ -63,7 +63,7 @@
                 </div>
             </div>
             <!-- About Me -->
-            <div class="about-me bg-violet-300 pt-6">
+            <div class="about-me bg-violet-300 pt-6" id="about">
                 <img src="images/Wanjiku_Kairu_Headshot_edited_edited.avif" alt="Wanjiku smiling">
                 <div class="about-me__copy p-6 flex flex-col items-center">
                     <h2 class="about-me__title font-bold text-3xl tracking-widest pb-4 text-center">ABOUT ME!</h2>
@@ -76,13 +76,13 @@
                 </div>
             </div>
             <!-- Content -->
-            <div class="content flex flex-col gap-6 items-center bg-[url(/images/textured_background_pink.avif)] py-10">
+            <div class="content flex flex-col gap-6 items-center bg-[url(/images/textured_background_pink.avif)] py-10" id="content">
                 <a class="content__btn bg-violet-200 py-4 w-4/5 text-center text-2xl font-bold border-10 tracking-wider transition duration-400 hover:bg-white" href="">CONTENT PORTFOLIO</a> 
                 <a class="content__btn bg-violet-400 py-4 w-4/5 text-center text-2xl font-bold border-10 tracking-wider transition duration-400 hover:bg-white" href="">JAZZ FESTIVAL</a>
                 <a class="content__btn bg-violet-600 py-4 w-4/5 text-center text-2xl font-bold border-10 tracking-wider transition duration-400 hover:bg-white" href="">COMMERCIAL</a>
             </div>
             <!-- Gallery -->
-            <div class="gallery flex flex-col">
+            <div class="gallery flex flex-col" id="gallery">
                 <img class="gallery__img object-top" src="images/WanjikuKairu_Headshot.jpg" alt="portrait of Wanjiku">
                 <img class="gallery__img object-top" src="images/WanjikuKairu_Stripes.jpg" alt="portrait of Wanjiku">
                 <img class="gallery__img object-top" src="images/wk_beach_hat.jpg" alt="portrait of Wanjiku">
@@ -128,7 +128,7 @@
                     <label class="form__label form__label-message" for="message">Message</label>
                     <textarea class="form__message bg-white h-20" id="message"></textarea>
 
-                    <input class="form__submit self-center bg-black text-white py-2 px-4 w-fit border-black border-2 transition duration-300 hover:bg-teal-500 hover:text-black" type="submit" value="Submit">
+                    <input class="form__submit self-center bg-black text-white py-2 px-4 w-fit border-black border-2 transition duration-300 hover:bg-teal-500 hover:cursor-pointer hover:text-black" type="submit" value="Submit">
                 </form>
             </div>
             <!-- Footer -->
