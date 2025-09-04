@@ -9,3 +9,18 @@
     font-size: 1.15rem;
     color: rgb(100, 100, 100)
 }
+
+.gallery__img {
+    height: 300px;
+    object-fit: cover;
+}
+
+.form__label {
+    font-size: 1.15rem;
+}
+
+.form__input {
+    background-color: rgb(221, 214, 255);
+    padding: 6px;
+    border: 2px solid black;
+}

@@ -9,7 +9,7 @@
 </head>
 <body class="relative">
     <!-- Slide menu -->
-     <div class="menu__container absolute z-2 transition duration-300 bg-white h-full w-0 right-0 shadow-md">
+     <div class="menu__container fixed z-2 transition duration-300 bg-white h-screen w-0 right-0 shadow-md">
         <div class="menu__inner-container p-10">
             <div class="slide-menu__btn-box relative flex justify-end">
                 <img class="menu__close-btn w-8 relative right-0" src="images/xmark-solid-full.svg" alt="close menu icon">
@@ -82,16 +82,58 @@
                 <a class="content__btn bg-violet-600 py-4 w-4/5 text-center text-2xl font-bold border-10 tracking-wider transition duration-400 hover:bg-white" href="">COMMERCIAL</a>
             </div>
             <!-- Gallery -->
-            <div class="gallery">
-
+            <div class="gallery flex flex-col">
+                <img class="gallery__img object-top" src="images/WanjikuKairu_Headshot.jpg" alt="portrait of Wanjiku">
+                <img class="gallery__img object-top" src="images/WanjikuKairu_Stripes.jpg" alt="portrait of Wanjiku">
+                <img class="gallery__img object-top" src="images/wk_beach_hat.jpg" alt="portrait of Wanjiku">
+                <img class="gallery__img object-top" src="images/WanjikuKairu_BBW_1.jpeg" alt="portrait of Wanjiku">
+                <img class="gallery__img object-bottom" src="images/wk_fence.jpg" alt="portrait of Wanjiku">
+                <img class="gallery__img object-top" src="images/WanjikuKairu_Headshot_Theatre.jpg" alt="portrait of Wanjiku">
+                <img class="gallery__img object-top" src="images/wk_fan.jpg" alt="portrait of Wanjiku">
+                <img class="gallery__img object-top" src="images/WanjikuKairu_Pink.jpg" alt="portrait of Wanjiku">
+                <img class="gallery__img object-top" src="images/_R8A9853 copy.jpg" alt="portrait of Wanjiku">
             </div>
             <!-- Contact -->
-            <div class="contact">
+            <div class="contact flex flex-col items-center bg-violet-300 p-6">
+                <h2 class="contact__title text-2xl font-extrabold tracking-widest border-black border-6 w-fit p-4 mb-6">GET IN TOUCH!</h2>
+                <div class="contact__info flex flex-col items-center">
+                    <h3 class="contact-info__title text-2xl font-extrabold tracking-widest w-fit mb-6">CONTACT</h3>
+                    <p class="agent-name">Kalena Schweger – Big Mouth Talent</p>
+                    <p class="agent-address">5100 Ravenswood Ave., Ste 102</p>
+                    <p class="agent-address-two  mb-6">Chicago IL, 60640</p>
+                    <p class="agent-phone">Tel: 312-421-4400</p>
+                    <p class="agent-email">kalena@bigmouthtalent.com</p>
+                    <div class="contact__socials mt-6">
+                        <ul class="socials_list flex gap-2">
+                            <li class="socials__list-item"><a class="socials-list__link" href="https://www.instagram.com/wanjikal/" target="_blank"><img class="socials-list__link-img w-6 hover:opacity-60" src="images/instagram-brands-solid-full.svg"/></a></li>
+                            <li class="socials__list-item"><a class="socials-list__link" href="https://www.youtube.com/channel/UC4thA3-y53pxO41zCXcy1Lg" target="_blank"><img class="socials-list__link-img w-6 hover:opacity-60" src="images/youtube-brands-solid-full.svg"/></a></li>
+                            <li class="socials__list-item"><a class="socials-list__link" href="https://www.facebook.com/wanjiku.kairu" target="_blank"><img class="socials-list__link-img w-6 hover:opacity-60" src="images/facebook-brands-solid-full.svg"/></a></li>
+                            <li class="socials__list-item"><a class="socials-list__link" href="https://www.linkedin.com/in/wanjiku-kairu/" target="_blank"><img class="socials-list__link-img w-6 hover:opacity-60" src="images/linkedin-in-brands-solid-full.svg"/></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <form class="contact__form flex flex-col gap-4 mt-10 w-3/4">
+                    <label class="form__label form__label-firstname" for="first-name">First Name *</label>
+                    <input class="form__input form__input-firstname" id="first-name" required>
 
+                    <label class="form__label form__label-lastname" for="last-name">Last Name *</label>
+                    <input class="form__input form__input-lastname" id="last-name" required>
+
+                    <label class="form__label form__label-email" for="email">Email *</label>
+                    <input class="form__input form__input-email" id="email" required>
+
+                    <label class="form__label form__label-subject" for="subject">Subject</label>
+                    <input class="form__input form__input-subject" id="subject">
+
+                    <label class="form__label form__label-message" for="message">Message</label>
+                    <textarea class="form__message bg-white h-20" id="message"></textarea>
+
+                    <input class="form__submit self-center bg-black text-white py-2 px-4 w-fit border-black border-2 transition duration-300 hover:bg-teal-500 hover:text-black" type="submit" value="Submit">
+                </form>
             </div>
             <!-- Footer -->
-            <footer class="footer">
-                
+            <footer class="footer p-6 bg-white text-center">
+                <p class="footer__copy">&copy; 2025 Wanjiku Kairu</p>
             </footer>
         </main>
     </div>
