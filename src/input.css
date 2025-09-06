@@ -1,5 +1,6 @@
 @import "tailwindcss";
 
+
 .slide-menu__navlist-item {
     padding: 16px;
     border-bottom: 2px solid rgb(100, 100, 100);
@@ -27,8 +28,7 @@
 
 @media (min-width:1200px) {
     .gallery__img {
-    height: 425px;
-    object-fit: initial;
-    flex: 0 1 32%;
+    min-height: 425px;
+    flex: 1 1 32%;
 }
 }
