@@ -27,6 +27,7 @@ slideMenuLinks.forEach((link) => {
     link.addEventListener("click", () => {
     slideMenu.classList.remove("w-3/4")
     hamburgerOpen.classList.remove("invisible")
+    container.classList.remove("opacity-50")
     })
 })
 
