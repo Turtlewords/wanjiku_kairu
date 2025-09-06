@@ -68,12 +68,12 @@
             </div>
             <!-- About Me -->
             <div class="about-me bg-violet-300 pt-6 xl:pt-0 relative xl:flex xl:items-center xl:justify-center" id="about">
-                <img class="xl:relative xl:left-1/6 overflow-hidden" src="images/Wanjiku_Kairu_Headshot_edited_edited.avif" alt="Wanjiku smiling">
-                <div class="about-me__copy p-6 flex flex-col items-center">
-                    <h2 class="about-me__title font-bold text-3xl tracking-widest pb-4 text-center">ABOUT ME!</h2>
+                <img class="xl:relative overflow-hidden" src="images/Wanjiku_Kairu_Headshot_edited_edited.avif" alt="Wanjiku smiling">
+                <div class="about-me__copy p-6 flex flex-col items-center max-w-100 xl:items-start">
+                    <h2 class="about-me__title font-bold text-3xl tracking-widest pb-4 text-center ">ABOUT ME!</h2>
                     <p class="about-me__subtitle pb-4 text-center">Hey there, I'm Wanjiku!</p>
-                    <p class="about-me__body w-3/4 text-center">My passion is to connect audiences through emotion. The energy of comedy runs through me to illuminate the wonders of the mind. I hope to enlighten and spread joy in our world. I think we all deserve to smile!</p>
-                    <div class="about-me__btn-box flex flex-col gap-4 items-center p-4 xl:flex-row">
+                    <p class="about-me__body w-3/4 text-center xl:text-start">My passion is to connect audiences through emotion. The energy of comedy runs through me to illuminate the wonders of the mind. I hope to enlighten and spread joy in our world. I think we all deserve to smile!</p>
+                    <div class="about-me__btn-box flex flex-col gap-4 items-center p-4 xl:flex-row xl:px-0">
                         <a class="see-content-btn bg-black text-white py-2 px-4 w-fit border-black border-2 transition duration-300 hover:bg-teal-500 hover:text-black" href="content_portfolio.html">See Content</a>
                         <a class="see-writing-portfolio-btn bg-black text-white py-2 px-4 w-fit border-black border-2 transition duration-300 hover:bg-teal-500 hover:text-black" href="writing.html">See Writing Portfolio</a>
                     </div>
@@ -98,43 +98,59 @@
                 <div class="gallery__wrapper"><img class="gallery__img object-top transition duration-1000" src="images/_R8A9853 copy.jpg" alt="portrait of Wanjiku"></div>
             </div>
             <!-- Contact -->
-            <div class="contact flex flex-col items-center bg-violet-300 p-6" id="contact">
-                <h2 class="contact__title text-2xl font-extrabold tracking-widest border-black border-6 w-fit p-4 mb-6">GET IN TOUCH!</h2>
-                <div class="contact__info flex flex-col items-center">
-                    <h3 class="contact-info__title text-2xl font-extrabold tracking-widest w-fit mb-6">CONTACT</h3>
-                    <p class="agent-name">Kalena Schweger – Big Mouth Talent</p>
-                    <p class="agent-address">5100 Ravenswood Ave., Ste 102</p>
-                    <p class="agent-address-two  mb-6">Chicago IL, 60640</p>
-                    <p class="agent-phone">Tel: 312-421-4400</p>
-                    <p class="agent-email">kalena@bigmouthtalent.com</p>
-                    <div class="contact__socials mt-6">
-                        <ul class="socials_list flex gap-4">
-                            <li class="socials__list-item"><a class="socials-list__link" href="https://www.instagram.com/wanjikal/" target="_blank"><img class="socials-list__link-img w-8 hover:opacity-60" src="images/instagram-brands-solid-full.svg"/></a></li>
-                            <li class="socials__list-item"><a class="socials-list__link" href="https://www.youtube.com/channel/UC4thA3-y53pxO41zCXcy1Lg" target="_blank"><img class="socials-list__link-img w-8 hover:opacity-60" src="images/youtube-brands-solid-full.svg"/></a></li>
-                            <li class="socials__list-item"><a class="socials-list__link" href="https://www.facebook.com/wanjiku.kairu" target="_blank"><img class="socials-list__link-img w-8 hover:opacity-60" src="images/facebook-brands-solid-full.svg"/></a></li>
-                            <li class="socials__list-item"><a class="socials-list__link" href="https://www.linkedin.com/in/wanjiku-kairu/" target="_blank"><img class="socials-list__link-img w-8 hover:opacity-60" src="images/linkedin-in-brands-solid-full.svg"/></a></li>
-                        </ul>
-                    </div>
+            <div class="contact flex flex-col bg-violet-300 p-4 xl:py-30" id="contact">
+                <div class="contact__title-container flex justify-center">
+                    <h2 class="contact__title text-2xl font-extrabold tracking-widest border-black border-6 w-fit p-4 mb-6 xl:text-5xl xl:py-8 xl:px-30">GET IN TOUCH!</h2>
                 </div>
-                <form class="contact__form flex flex-col gap-4 mt-10 w-3/4">
-                    <label class="form__label form__label-firstname" for="first-name">First Name *</label>
-                    <input class="form__input form__input-firstname" id="first-name" required>
+                    
+                <div class="contact__container flex flex-col items-center xl:flex-row xl:justify-center xl:gap-18"> 
+                    <div class="contact__info flex flex-col items-center xl:self-start xl:mt-10">
+                        <h3 class="contact-info__title text-2xl font-extrabold tracking-widest w-fit mb-6">CONTACT</h3>
+                        <p class="agent-name">Kalena Schweger – Big Mouth Talent</p>
+                        <p class="agent-address">5100 Ravenswood Ave., Ste 102</p>
+                        <p class="agent-address-two  mb-6">Chicago IL, 60640</p>
+                        <p class="agent-phone">Tel: 312-421-4400</p>
+                        <p class="agent-email">kalena@bigmouthtalent.com</p>
+                        <div class="contact__socials mt-6">
+                            <ul class="socials_list flex gap-4">
+                                <li class="socials__list-item"><a class="socials-list__link" href="https://www.instagram.com/wanjikal/" target="_blank"><img class="socials-list__link-img w-8 hover:opacity-60" src="images/instagram-brands-solid-full.svg"/></a></li>
+                                <li class="socials__list-item"><a class="socials-list__link" href="https://www.youtube.com/channel/UC4thA3-y53pxO41zCXcy1Lg" target="_blank"><img class="socials-list__link-img w-8 hover:opacity-60" src="images/youtube-brands-solid-full.svg"/></a></li>
+                                <li class="socials__list-item"><a class="socials-list__link" href="https://www.facebook.com/wanjiku.kairu" target="_blank"><img class="socials-list__link-img w-8 hover:opacity-60" src="images/facebook-brands-solid-full.svg"/></a></li>
+                                <li class="socials__list-item"><a class="socials-list__link" href="https://www.linkedin.com/in/wanjiku-kairu/" target="_blank"><img class="socials-list__link-img w-8 hover:opacity-60" src="images/linkedin-in-brands-solid-full.svg"/></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <form class="contact__form flex flex-col gap-4 mt-10 w-3/4 xl:self-start max-w-120">
+                        <div class="form__upper flex flex-col gap-4 xl:flex-row xl:items-center">
+                            <label class="form__label form__label-firstname" for="first-name">First Name *
+                                <input class="form__input form__input-firstname mt-4" id="first-name" required>
+                            </label>
+                            
 
-                    <label class="form__label form__label-lastname" for="last-name">Last Name *</label>
-                    <input class="form__input form__input-lastname" id="last-name" required>
+                            <label class="form__label form__label-lastname" for="last-name">Last Name *
+                                <input class="form__input form__input-lastname mt-4" id="last-name" required>
+                            </label>
+                            
+                        </div>
+                        <div class="form__lower flex flex-col gap-4 xl:flex-row xl:items-center">
+                            <label class="form__label form__label-email" for="email">Email *
+                                <input class="form__input form__input-email mt-4" id="email" required>
+                            </label>
+                            
 
-                    <label class="form__label form__label-email" for="email">Email *</label>
-                    <input class="form__input form__input-email" id="email" required>
+                            <label class="form__label form__label-subject" for="subject">Subject
+                                <input class="form__input form__input-subject mt-4" id="subject">
+                            </label>
+                            
+                        </div>
+                        <label class="form__label form__label-message" for="message">Message</label>
+                        <textarea class="form__message bg-violet-200 border-2 border-black h-30" id="message"></textarea>
 
-                    <label class="form__label form__label-subject" for="subject">Subject</label>
-                    <input class="form__input form__input-subject" id="subject">
-
-                    <label class="form__label form__label-message" for="message">Message</label>
-                    <textarea class="form__message bg-violet-200 border-2 border-black h-30" id="message"></textarea>
-
-                    <input class="form__submit self-center bg-black text-white py-2 px-4 w-fit border-black border-2 transition duration-300 hover:bg-teal-500 hover:cursor-pointer hover:text-black" type="submit" value="Submit">
-                </form>
+                        <input class="form__submit self-center bg-black text-white py-2 px-4 w-fit border-black border-2 transition duration-300 hover:bg-teal-500 hover:cursor-pointer hover:text-black" type="submit" value="Submit">
+                    </form>
+                </div> 
             </div>
+
             <!-- Footer -->
             <footer class="footer p-6 bg-white text-center">
                 <p class="footer__copy">&copy; 2025 Wanjiku Kairu</p>

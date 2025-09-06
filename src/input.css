@@ -13,6 +13,7 @@
 
 .gallery__img {
     height: 300px;
+    width: 100%;
     object-fit: cover;
 }
 
@@ -32,12 +33,12 @@
     flex: 1 1 100%;
     
     
-}
+    }
 
-.gallery__wrapper {
-    display: flex;
-    height: 425px;
-    flex: 1 1 32%;
-    overflow: hidden;
-}
+    .gallery__wrapper {
+        display: flex;
+        height: 425px;
+        flex: 1 1 32%;
+        overflow: hidden;
+    }
 }
