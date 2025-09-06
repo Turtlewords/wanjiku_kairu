@@ -24,3 +24,11 @@
     padding: 6px;
     border: 2px solid black;
 }
+
+@media (min-width:1200px) {
+    .gallery__img {
+    height: 425px;
+    object-fit: initial;
+    flex: 0 1 32%;
+}
+}

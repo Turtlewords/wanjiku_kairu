@@ -56,20 +56,24 @@
         <main>
             <!-- Hero -->
             <div class="hero relative">
-                <img class="hero__img" src="images/wk_hero_mobile.avif" alt="wanjiku portrait">
-                <div class="hero__copy absolute inset-x-0 top-6 text-center">
-                    <h1 class="hero__header font-bold text-2xl tracking-widest text-white"><span class="purple__span text-violet-300">W</span>ANJIKU <span class="purple__span text-violet-300">K</span>AIRU</h1>
-                    <p class="hero__text text-white text-center">Producer <span class="purple__span text-violet-300">|</span> Writer</p>
+                <picture class="hero__img">
+                    <source media="(min-width: 1200px)" srcset="images/wk_hero.avif">
+                    <img src="images/wk_hero_mobile.avif">
+                </picture>
+                <!-- <img class="hero__img" src="images/wk_hero_mobile.avif" alt="wanjiku portrait"> -->
+                <div class="hero__copy absolute inset-x-0 top-6 text-center xl:top-2/5">
+                    <h1 class="hero__header font-bold text-2xl tracking-widest text-white xl:text-7xl"><span class="purple__span text-violet-300">W</span>ANJIKU <span class="purple__span text-violet-300">K</span>AIRU</h1>
+                    <p class="hero__text text-white text-center xl:text-3xl xl:mt-6">Producer <span class="purple__span text-violet-300">|</span> Writer</p>
                 </div>
             </div>
             <!-- About Me -->
-            <div class="about-me bg-violet-300 pt-6" id="about">
-                <img src="images/Wanjiku_Kairu_Headshot_edited_edited.avif" alt="Wanjiku smiling">
+            <div class="about-me bg-violet-300 pt-6 xl:pt-0 relative xl:flex xl:items-center xl:justify-center" id="about">
+                <img class="xl:relative xl:left-1/6" src="images/Wanjiku_Kairu_Headshot_edited_edited.avif" alt="Wanjiku smiling">
                 <div class="about-me__copy p-6 flex flex-col items-center">
                     <h2 class="about-me__title font-bold text-3xl tracking-widest pb-4 text-center">ABOUT ME!</h2>
                     <p class="about-me__subtitle pb-4 text-center">Hey there, I'm Wanjiku!</p>
                     <p class="about-me__body w-3/4 text-center">My passion is to connect audiences through emotion. The energy of comedy runs through me to illuminate the wonders of the mind. I hope to enlighten and spread joy in our world. I think we all deserve to smile!</p>
-                    <div class="about-me__btn-box flex flex-col gap-4 items-center p-4">
+                    <div class="about-me__btn-box flex flex-col gap-4 items-center p-4 xl:flex-row">
                         <a class="see-content-btn bg-black text-white py-2 px-4 w-fit border-black border-2 transition duration-300 hover:bg-teal-500 hover:text-black" href="content_portfolio.html">See Content</a>
                         <a class="see-writing-portfolio-btn bg-black text-white py-2 px-4 w-fit border-black border-2 transition duration-300 hover:bg-teal-500 hover:text-black" href="writing.html">See Writing Portfolio</a>
                     </div>
@@ -82,7 +86,7 @@
                 <a class="content__btn bg-violet-600 py-4 w-4/5 text-center text-2xl font-bold border-10 tracking-wider transition duration-400 hover:bg-white" href="commercial.html">COMMERCIAL</a>
             </div>
             <!-- Gallery -->
-            <div class="gallery flex flex-col" id="gallery">
+            <div class="gallery flex flex-col xl:grid xl:grid-cols-3 xl:mt-auto" id="gallery">
                 <img class="gallery__img object-top" src="images/WanjikuKairu_Headshot.jpg" alt="portrait of Wanjiku">
                 <img class="gallery__img object-top" src="images/WanjikuKairu_Stripes.jpg" alt="portrait of Wanjiku">
                 <img class="gallery__img object-top" src="images/wk_beach_hat.jpg" alt="portrait of Wanjiku">
