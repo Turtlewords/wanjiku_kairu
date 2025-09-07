@@ -25,6 +25,7 @@
     background-color: rgb(221, 214, 255);
     padding: 6px;
     border: 2px solid black;
+    width: 100%;
 }
 
 @media (min-width:1200px) {

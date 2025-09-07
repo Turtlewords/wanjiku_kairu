@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <title>Producer.Writer | Wanjiku Kairu</title>
+    <link rel="icon" type="image/x-icon" href="images/wk_favicon.ico.ico">
     <link rel="stylesheet" href="src/output.css">
 </head>
 <body class="relative">
@@ -120,7 +121,8 @@
                             </ul>
                         </div>
                     </div>
-                    <form class="contact__form flex flex-col gap-4 mt-10 w-3/4 xl:self-start max-w-120">
+                    <form class="contact__form flex flex-col gap-4 mt-10 w-3/4 xl:self-start max-w-120" action="https://api.web3forms.com/submit" method="POST"> 
+                        <input type="hidden" name="access_key" value="16daec1c-0275-49b8-b60d-2f69badaad6b">
                         <div class="form__upper flex flex-col gap-4 xl:flex-row xl:items-center">
                             <label class="form__label form__label-firstname" for="first-name">First Name *
                                 <input class="form__input form__input-firstname mt-4" id="first-name" required>
@@ -146,7 +148,10 @@
                         <label class="form__label form__label-message" for="message">Message</label>
                         <textarea class="form__message bg-violet-200 border-2 border-black h-30" id="message"></textarea>
 
-                        <input class="form__submit self-center bg-black text-white py-2 px-4 w-fit border-black border-2 transition duration-300 hover:bg-teal-500 hover:cursor-pointer hover:text-black" type="submit" value="Submit">
+                        <!-- Honeypot Spam Protection -->
+                        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+                        <button class="form__submit self-center bg-black text-white py-2 px-4 w-fit border-black border-2 transition duration-300 hover:bg-teal-500 hover:cursor-pointer hover:text-black" type="submit">Submit</button>
                     </form>
                 </div> 
             </div>
