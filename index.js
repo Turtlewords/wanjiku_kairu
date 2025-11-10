@@ -12,16 +12,14 @@ const slideMenuLinks = document.querySelectorAll(".slide-menu__link")
 // Event Listeners
 
 hamburgerOpen.addEventListener("click", () => {
-    hamburgerOpen.classList.add("invisible")
-    slideMenu.classList.add("w-3/4")
-    container.classList.add("opacity-50")
+    slideMenu.classList.remove("translate-x-full")
+    
     
 })
 
 hamburgerClose.addEventListener("click", () => {
-    hamburgerOpen.classList.remove("invisible")
-    slideMenu.classList.remove("w-3/4")
-    container.classList.remove("opacity-50")
+    slideMenu.classList.add("translate-x-full")
+    
 })
 
 slideMenuLinks.forEach((link) => {
