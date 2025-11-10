@@ -55,16 +55,23 @@
 
 @media (min-width:768px) {
     .gallery__img {
-    height: 425px;
+    height: 600px;
     flex: 1 1 100%;
+    
     
     
     }
 
     .gallery__wrapper {
         display: flex;
-        height: 425px;
+        height: 600px;
         flex: 1 1 32%;
         overflow: hidden;
+    }
+}
+
+@media (min-width: 1200px) {
+    .gallery__img, .gallery__wrapper {
+        height: 425px;
     }
 }
