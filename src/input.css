@@ -53,7 +53,7 @@
     }
 }
 
-@media (min-width:1200px) {
+@media (min-width:768px) {
     .gallery__img {
     height: 425px;
     flex: 1 1 100%;
