@@ -24,9 +24,10 @@ hamburgerClose.addEventListener("click", () => {
 
 slideMenuLinks.forEach((link) => {
     link.addEventListener("click", () => {
-    slideMenu.classList.remove("w-3/4")
-    hamburgerOpen.classList.remove("invisible")
-    container.classList.remove("opacity-50")
+    slideMenu.classList.add("translate-x-full")
+    // slideMenu.classList.remove("w-3/4")
+    // hamburgerOpen.classList.remove("invisible")
+    // container.classList.remove("opacity-50")
     })
 })
 
